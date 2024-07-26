@@ -1,0 +1,40 @@
+.table {
+    margin: 0 auto;
+    border-collapse: collapse;
+
+    & thead {
+        text-align: center;
+    }
+
+    & tbody {
+        color: rgb(var(--color-black));
+    }
+}
+
+th {
+    padding: 1rem 2rem;
+    color: rgb(var(--color-white));
+    border: 1px solid rgb(var(--color-primary));
+    background-color: rgb(var(--color-primary));
+}
+
+tr {
+    &:has(tbody) {
+        background-color: rgb(var(--color-white));
+    }
+
+    &:nth-child(even) {
+        background-color: rgb(var(--color-primary) / 10%);
+    }
+
+    & td {
+        min-width: 12rem;
+        padding: 0.5rem 2rem;
+        text-transform: capitalize;
+        border: 1px solid rgb(var(--color-primary));
+    }
+
+    & td:not(:first-child) {
+        text-align: center;
+    }
+}

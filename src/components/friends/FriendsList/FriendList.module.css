@@ -1,0 +1,16 @@
+.friends-list {
+    display: grid;
+    grid-template-columns: repeat(5, 7rem);
+    place-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.friends-item {
+    width: 100%;
+    padding: 1rem 0.75rem;
+    text-align: center;
+    border: 1px solid rgb(var(--color-dark));
+    border-radius: var(--border-radius-small);
+}

@@ -1,0 +1,44 @@
+:root {
+    --font-small: clamp(0.8rem, 0.56vi + 0.67rem, 0.94rem);
+    --font-base: clamp(1rem, 1.02vi + 0.76rem, 1.25rem);
+    --font-medium: clamp(1.25rem, 1.69vi + 0.85rem, 1.67rem);
+    --font-large: clamp(1.56rem, 2.68vi + 0.93rem, 2.22rem);
+
+    /* Colors */
+    --color-primary: 18 34 54;
+    --color-secondary: 128 128 128;
+    --color-light: 211 211 211;
+    --color-dark: 42 42 42;
+    --color-white: 255 255 255;
+    --color-black: 0 0 0;
+    --color-error: 255 0 0;
+    --color-success: 0 128 1;
+
+    /* Borders */
+    --border-radius-small: 0.5rem;
+}
+
+body {
+    font-family: "Lato",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
+    font-size: var(--font-base);
+    color: rgb(var(--color-secondary));
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 1rem;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

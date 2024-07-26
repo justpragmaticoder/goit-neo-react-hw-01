@@ -1,0 +1,19 @@
+.friend-name {
+    margin-block: 0.25rem;
+    color: rgb(var(--color-black));
+}
+
+.friends-status {
+    font-size: var(--font-small);
+    text-transform: capitalize;
+}
+
+.online {
+    composes: friends-status;
+    color: rgb(var(--color-success));
+}
+
+.offline {
+    composes: friends-status;
+    color: rgb(var(--color-error));
+}
